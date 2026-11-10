@@ -16,7 +16,7 @@
 
 ## 📖 项目简介
 
-**Antigravity v2.21.1 一键汉化补丁** - 为 Google Antigravity 桌面端提供完整的中文界面支持。
+**Antigravity v2.30.0+ (向下兼容 v2.21.1) 一键汉化补丁** - 为 Google Antigravity 桌面端提供完整的中文界面支持。
 
 ## ✨ 核心特性
 
@@ -81,7 +81,7 @@ python Antigravity-Patcher.py
 
 - **思考日志为英文** - 受限于大模型的即时流式输出架构，智能体后台生成的思考日志（`Thought` 过程）无法汉化，但所有最终回复与前端界面均已 100% 汉化
 - **多平台支持** - 目前已完美适配 Windows 以及 macOS (Intel & M芯片) 平台，Linux 暂不支持
-- **版本依赖** - 针对 Antigravity v2.21.1 深度优化，其他版本亦具备高度兼容性
+- **版本适配** - 完美适配 Antigravity v2.30.0+ 最新版（包含 WSL 集成、IDE 安装向导、WebMCP、深度思考与新模型等新特性），并向下兼容旧版本
 
 ## 📸 效果展示
 

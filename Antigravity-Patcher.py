@@ -389,7 +389,120 @@ DOM_TRANSLATOR_INJECTION = r"""
     "Kick off work on your computer and continue working with your agents from your phone or another device. Turn on Remote Control in app settings.": "在电脑上启动工作，并可以通过手机或其他设备继续与智能体协同工作。请在应用设置中开启“远程控制”。",
     "Kick off work on your computer and continue working with your agents from your phone or another device.": "在电脑上启动工作，并可以通过手机或其他设备继续与智能体协同工作。",
     "Turn on Remote Control in app settings.": "请在应用设置中开启“远程控制”。",
-    "Turn on Remote Control in app settings": "请在应用设置中开启“远程控制”"
+    "Turn on Remote Control in app settings": "请在应用设置中开启“远程控制”",
+
+    // v2.30.0+ Updates: WSL Integration
+    "Connect to WSL": "连接到 WSL", "Reopen Locally": "在本地重新打开",
+    "Windows Subsystem for Linux": "适用于 Linux 的 Windows 子系统 (WSL)",
+    "Run the app against a Linux environment. Connecting relaunches the app into the selected WSL distro.": "在 Linux 环境中运行应用。连接后将重启应用并切换至所选的 WSL 分发版。",
+    "Setting up WSL": "正在配置 WSL", "WSL distro not found": "未找到 WSL 分发版", "WSL setup failed": "WSL 配置失败",
+    "Folder is on the Windows filesystem": "文件夹位于 Windows 文件系统上", "Cannot open folder": "无法打开文件夹",
+    "Open workspace": "打开工作区", "Open workspaces": "打开多个工作区",
+    "Select Folder": "选择文件夹", "Select Workspace": "选择工作区", "Select Workspaces": "选择多个工作区",
+
+    // v2.30.0+ Updates: Documentation & IDE Integration
+    "Docs": "文档", "Documentation": "官方文档", "Welcome to Antigravity": "欢迎使用 Antigravity",
+    "Setting up…": "正在设置…", "Setting up...": "正在设置...",
+    "Welcome to the new Antigravity!": "欢迎使用全新的 Antigravity！",
+    "Antigravity has been redesigned to put agents first with new capabilities. If you'd still like a code editor, you can download it as a separate app named <b>Antigravity IDE</b>.": "Antigravity 已全新升级，带来以智能体为核心的全新能力。如果您仍需要代码编辑器，可单独下载名为 <b>Antigravity IDE</b> 的独立应用。",
+    "Download the Antigravity IDE": "下载 Antigravity IDE", "Explore the new Antigravity": "探索全新 Antigravity",
+    "Open Antigravity IDE": "打开 Antigravity IDE", "Antigravity IDE": "Antigravity IDE",
+
+    // v2.30.0+ Updates: View & Zoom Controls
+    "Actual Size": "实际大小", "Reset Zoom": "重置缩放", "Zoom In": "放大", "Zoom Out": "缩小",
+    "Toggle Zoom": "切换缩放", "Fit to window": "适应窗口",
+    "New Window": "新建窗口", "Close Window": "关闭窗口", "Close Tab": "关闭标签页",
+
+    // v2.30.0+ Updates: Thinking, Reasoning & Steps
+    "Reasoning Effort": "思考深度", "Reasoning effort": "思考深度", "reasoning effort": "思考深度",
+    "Reasoning": "深度思考", "reasoning": "深度思考",
+    "Thinking Budget": "思考预算", "Thinking budget": "思考预算", "thinking budget": "思考预算",
+    "High Reasoning": "高深度思考", "Medium Reasoning": "中深度思考", "Low Reasoning": "低深度思考",
+    "High reasoning": "高深度思考", "Medium reasoning": "中深度思考", "Low reasoning": "低深度思考",
+    "High": "高", "Medium": "中", "Low": "低",
+    "Thinking Process": "思考过程", "Thinking process": "思考过程",
+    "Thought Process": "思考过程", "Thought process": "思考过程",
+    "Thought for": "思考耗时", "thought for": "思考耗时",
+    "Intermediate steps": "中间步骤", "intermediate steps": "中间步骤",
+    "Intermediate thinking steps": "中间思考步骤", "intermediate thinking steps": "中间思考步骤",
+    "Show intermediate steps": "显示中间步骤", "Hide intermediate steps": "隐藏中间步骤",
+    "Show intermediate thinking steps": "显示中间思考步骤", "Hide intermediate thinking steps": "隐藏中间思考步骤",
+    "Step-by-step": "分步执行", "Step by step": "分步执行",
+    "Step": "步骤", "Steps": "步骤",
+    "Agent is thinking...": "智能体正在思考...", "Agent is planning...": "智能体正在制定计划...",
+    "Agent is executing...": "智能体正在执行...", "Agent is running...": "智能体正在运行...",
+    "Agent is analyzing...": "智能体正在分析...", "Agent is browsing...": "智能体正在浏览...",
+    "Agent is searching...": "智能体正在搜索...", "Agent is reading...": "智能体正在读取文件...",
+    "Agent is editing...": "智能体正在编辑文件...",
+
+    // v2.30.0+ Updates: Models & Capabilities
+    "Gemini 3.8 Flash": "Gemini 3.8 Flash", "Gemini 3.0 Flash": "Gemini 3.0 Flash", "Gemini 3.0": "Gemini 3.0",
+    "Gemini 2.5 Flash": "Gemini 2.5 Flash", "Gemini 2.5 Pro": "Gemini 2.5 Pro", "Gemini 2.0 Flash": "Gemini 2.0 Flash",
+    "Gemini 1.5 Pro": "Gemini 1.5 Pro", "Gemini 1.5 Flash": "Gemini 1.5 Flash",
+    "Claude 3.7 Sonnet": "Claude 3.7 Sonnet", "Claude 3.5 Sonnet": "Claude 3.5 Sonnet",
+    "Claude 4 Sonnet": "Claude 4 Sonnet", "Claude 4 Opus": "Claude 4 Opus",
+    "Model Grounding": "模型依据", "Model grounding": "模型依据",
+    "Search Grounding": "搜索依据", "Code Execution": "代码执行",
+    "Function Calling": "函数调用", "Structured Output": "结构化输出",
+
+    // v2.30.0+ Updates: Subagents & Multi-Agent Delegation
+    "Subagents": "子智能体", "subagents": "子智能体",
+    "Subagent": "子智能体", "subagent": "子智能体",
+    "Parent Agent": "父智能体", "Parent agent": "父智能体",
+    "Child Agent": "子智能体", "Child agent": "子智能体",
+    "Main Agent": "主智能体", "Main agent": "主智能体",
+    "Delegated task": "已委派任务", "Delegating task": "正在委派任务",
+    "Delegate to subagent": "委派给子智能体",
+    "No subagents running": "暂无运行中的子智能体", "No subagents": "暂无子智能体", "No subagent": "暂无子智能体",
+    "Running subagents": "运行中的子智能体", "Active subagents": "活跃的子智能体",
+    "Subagent output": "子智能体输出", "Subagent execution": "子智能体执行",
+    "Subagent completed": "子智能体已完成", "Subagent failed": "子智能体执行失败",
+
+    // v2.30.0+ Updates: WebMCP & Browser Agent
+    "WebMCP": "WebMCP", "WebMCP Tools": "WebMCP 工具",
+    "WebMCP Server": "WebMCP 服务器", "WebMCP Servers": "WebMCP 服务器",
+    "Browser Actuation": "浏览器操作", "Browser actuation": "浏览器操作",
+    "Actuation Permissions": "操作权限", "Browser Actuation Rules": "浏览器操作规则",
+    "Allow browser actuation": "允许浏览器操作", "Deny browser actuation": "拒绝浏览器操作",
+    "Browser Javascript Execution Policy": "浏览器 JavaScript 执行策略",
+    "Controls whether the agent can run custom JavaScript to automate complex browser actions.": "控制智能体是否可以运行自定义 JavaScript 来自动化复杂的浏览器操作。",
+    "Block all browser JavaScript execution.": "阻止所有浏览器 JavaScript 执行。",
+    "Prompt for approval before running browser scripts.": "在运行浏览器脚本前提示批准。",
+    "Allow full browser script execution without prompting.": "允许执行完整的浏览器脚本而不提示。",
+    "Browser subagent": "浏览器子智能体",
+
+    // v2.30.0+ Updates: Artifacts, Scratchpad & Diffs
+    "Artifacts": "产物", "Artifact": "产物", "artifacts": "产物", "artifact": "产物",
+    "No artifacts generated": "暂无生成的产物", "No artifacts generated.": "暂无生成的产物。",
+    "No artifacts": "暂无产物", "No artifacts.": "暂无产物。",
+    "Scratchpad": "便签", "Scratch": "便签", "Notes": "笔记", "Note": "笔记",
+    "Automations": "自动化", "Automation": "自动化", "automations": "自动化", "automation": "自动化",
+    "View Split Diff": "分屏对比", "View Inline Diff": "行内对比",
+    "Split Diff": "分屏对比", "Inline Diff": "行内对比",
+    "Side-by-side": "并排对比", "Unified": "统一对比",
+    "Diff View": "差异视图", "Diff view": "差异视图",
+    "Review changes": "审阅更改", "Review Changes": "审阅更改",
+    "Pending review": "等待审阅", "In review": "审阅中",
+    "Approve": "批准", "Reject": "拒绝", "Accept": "接受", "Keep": "保留", "Discard": "舍弃",
+    "Accept All": "全部接受", "Reject All": "全部拒绝",
+    "Accept change": "接受更改", "Reject change": "拒绝更改",
+    "Accept this change": "接受此更改", "Reject this change": "拒绝此更改",
+    "Undo changes": "撤销更改", "Redo changes": "重做更改",
+    "Undo all": "全部撤销", "Redo all": "全部重做",
+
+    // v2.30.0+ Updates: AI Credits & Quota
+    "AI credit balance": "AI 积分余额", "AI credit balance:": "AI 积分余额：",
+    "Available AI Credits": "可用 AI 积分", "Available AI Credits:": "可用 AI 积分：",
+    "Model Credits": "模型积分", "Model credits": "模型积分",
+    "Enable AI Credit Overages": "启用 AI 积分超额使用",
+    "Out of model quota": "模型配额已用尽", "Quota exceeded": "已超出配额",
+    "Monthly Limit": "每月限额", "Weekly Limit": "每周限额", "Five Hour Limit": "五小时限额",
+    "Monthly limit remaining": "每月限额剩余", "Weekly limit remaining": "每周限额剩余", "Five Hour limit remaining": "五小时限额剩余",
+    "Rate limit reached": "已达到速率限制", "Rate limits": "速率限制", "Rate limit": "速率限制",
+
+    // v2.30.0+ Updates: Tray & Status
+    "No agents running": "暂无运行中的智能体", "Open Antigravity": "打开 Antigravity", "Show Antigravity": "显示 Antigravity",
+    "agent running": "个智能体正在运行", "agents running": "个智能体正在运行", "No updates available": "当前已是最新版本"
   };
 
   const coreWords = {
@@ -536,6 +649,56 @@ DOM_TRANSLATOR_INJECTION = r"""
       text = text.replace(/(\d+(?:\.\d+)?)% of the customization budget is available\.?/g, "自定义项预算可用额度为 $1%。");
       text = text.replace(/%\s*of the customization budget is available\.?/g, "% 的自定义项预算可用额度。");
       text = text.replace(/(^\s*)of the customization budget is available\.?/g, "$1的自定义项预算可用额度。");
+    }
+        // v2.30.0+ Dynamic Regex Translations
+    if ((m = trimmed.match(/^Thinking budget:\s*(\d+)\s*tokens?$/i))) {
+      return text.replace(trimmed, "思考预算：" + m[1] + " 个 Token");
+    }
+    if ((m = trimmed.match(/^Reasoning effort:\s*(low|medium|high)$/i))) {
+      const map = { low: '低', medium: '中', high: '高' };
+      return text.replace(trimmed, "思考深度：" + (map[m[1].toLowerCase()] || m[1]));
+    }
+    if ((m = trimmed.match(/^Thought for\s*(\d+(?:\.\d+)?)\s*(?:s|seconds?)$/i))) {
+      return text.replace(trimmed, "思考耗时 " + m[1] + " 秒");
+    }
+    if ((m = trimmed.match(/^Thought for\s*(\d+)\s*(?:m|minutes?)\s*(\d+)\s*(?:s|seconds?)$/i))) {
+      return text.replace(trimmed, "思考耗时 " + m[1] + " 分 " + m[2] + " 秒");
+    }
+    if ((m = trimmed.match(/^Setting up WSL:\s*(.+)$/i))) {
+      return text.replace(trimmed, "正在配置 WSL: " + m[1]);
+    }
+    if ((m = trimmed.match(/^(\d+)\s*subagents?\s*running$/i))) {
+      return text.replace(trimmed, m[1] + " 个子智能体正在运行");
+    }
+    if ((m = trimmed.match(/^(\d+)\s*agents?\s*running$/i))) {
+      return text.replace(trimmed, m[1] + " 个智能体正在运行");
+    }
+    if ((m = trimmed.match(/^(\d+)\s*steps?\s*completed$/i))) {
+      return text.replace(trimmed, "已完成 " + m[1] + " 个步骤");
+    }
+    if ((m = trimmed.match(/^Step\s*(\d+)\s*of\s*(\d+)$/i))) {
+      return text.replace(trimmed, "步骤 " + m[1] + " / " + m[2]);
+    }
+    if ((m = trimmed.match(/^Lines added:\s*(\+?\d+)$/i))) {
+      return text.replace(trimmed, "已添加 " + m[1] + " 行");
+    }
+    if ((m = trimmed.match(/^Lines removed:\s*(-?\d+)$/i))) {
+      return text.replace(trimmed, "已删除 " + m[1] + " 行");
+    }
+    if ((m = trimmed.match(/^(\d+)%\s*of\s*quota\s*used$/i))) {
+      return text.replace(trimmed, "已使用 " + m[1] + "% 配额");
+    }
+    if ((m = trimmed.match(/^(\d+)%\s*of\s*limit\s*used$/i))) {
+      return text.replace(trimmed, "已使用 " + m[1] + "% 限额");
+    }
+    if ((m = trimmed.match(/^Monthly limit remaining:\s*(.+)$/i))) {
+      return text.replace(trimmed, "每月限额剩余：" + m[1]);
+    }
+    if ((m = trimmed.match(/^Weekly limit remaining:\s*(.+)$/i))) {
+      return text.replace(trimmed, "每周限额剩余：" + m[1]);
+    }
+    if ((m = trimmed.match(/^5-hour limit remaining:\s*(.+)$/i))) {
+      return text.replace(trimmed, "5 小时限额剩余：" + m[1]);
     }
     if ((m = trimmed.match(/^Show (\d+) breakdowns?$/))) {
       return text.replace(trimmed, "显示 " + m[1] + " 项明细");
@@ -826,40 +989,65 @@ MENU_TRANSLATOR_INJECTION = r"""
 // Antigravity Chinese Localization Engine - Menu
 (function() {
   const menuTranslationMap = {
-    'File': '文件', 'Edit': '编辑', 'View': '视图', 'Window': '窗口', 'Help': '帮助',
-    'New Conversation': '新建对话', 'New Window': '新建窗口', 'Close Window': '关闭窗口',
+    'File': '文件', 'Edit': '编辑', 'View': '视图', 'Window': '窗口', 'Help': '帮助', 'App': '应用',
+    'New Conversation': '新建对话', 'New Window': '新建窗口', 'Close Window': '关闭窗口', 'Close Tab': '关闭标签页',
+    'Open File...': '打开文件...', 'Open File': '打开文件', 'Open Workspace...': '打开工作区...', 'Open Workspace': '打开工作区',
+    'Connect to WSL': '连接到 WSL', 'Reopen Locally': '在本地重新打开',
     'Check for Updates': '检查更新', 'Checking for Updates...': '正在检查更新...',
     'Downloading Update...': '正在下载更新...', 'Restart to Update': '重启以应用更新',
     'Undo': '撤销', 'Redo': '重做', 'Cut': '剪切', 'Copy': '复制', 'Paste': '粘贴',
     'Select All': '全选', 'Minimize': '最小化', 'Close': '关闭', 'Quit Antigravity': '退出 Antigravity',
     'About Antigravity': '关于 Antigravity', 'Services': '服务', 'Hide Antigravity': '隐藏 Antigravity',
     'Hide Others': '隐藏其他', 'Show All': '显示全部', 'Force Reload': '强制重新加载',
-    'Reload': '重新加载', 'Actual Size': '实际大小', 'Zoom In': '放大', 'Zoom Out': '缩小',
-    'Toggle Full Screen': '切换全屏',
-    'Split': '分屏', 'Split Right': '向右分屏', 'Split Down': '向下分屏', 'Replace With New': '替换为新建'
+    'Reload': '重新加载', 'Actual Size': '实际大小', 'Zoom In': '放大', 'Zoom Out': '缩小', 'Reset Zoom': '重置缩放',
+    'Toggle Full Screen': '切换全屏', 'Docs': '文档', 'Antigravity Help': 'Antigravity 帮助',
+    'Split': '分屏', 'Split Right': '向右分屏', 'Split Down': '向下分屏', 'Split Left': '向左分屏', 'Split Up': '向上分屏',
+    'Replace With New': '替换为新建', 'Replace with New': '替换为新建',
+    'Copy Link': '复制链接', 'Copy link': '复制链接', 'Copy ID': '复制 ID', 'Copy Conversation ID': '复制对话 ID',
+    'Copy Conversation Link': '复制对话链接', 'Duplicate Conversation': '制作对话副本', 'Delete Conversation': '删除对话',
+    'Archive Conversation': '归档对话', 'Rename': '重命名', 'Pin': '置顶', 'Unpin': '取消置顶',
+    'Close Others': '关闭其他', 'Close All': '全部关闭', 'Close to the Right': '关闭右侧', 'Close Saved': '关闭已保存',
+    'No agents running': '暂无运行中的智能体', 'Open Antigravity': '打开 Antigravity', 'Show Antigravity': '显示 Antigravity',
+    'Quit': '退出'
   };
-  function translateMenu(menuItem) {
-    if (menuItem.label && menuTranslationMap[menuItem.label]) {
-      menuItem.label = menuTranslationMap[menuItem.label];
+  function translateMenuItem(item) {
+    if (!item) return;
+    if (item.label && menuTranslationMap[item.label]) {
+      item.label = menuTranslationMap[item.label];
+    } else if (item.label) {
+      const trimmed = item.label.trim();
+      if (menuTranslationMap[trimmed]) {
+        item.label = menuTranslationMap[trimmed];
+      }
     }
-    if (menuItem.submenu && menuItem.submenu.items) {
-      menuItem.submenu.items.forEach(translateMenu);
-    }
-    if (menuItem.submenu && Array.isArray(menuItem.submenu)) {
-      menuItem.submenu.forEach(translateMenu);
+    if (item.submenu) {
+      if (Array.isArray(item.submenu)) {
+        item.submenu.forEach(translateMenuItem);
+      } else if (item.submenu.items && Array.isArray(item.submenu.items)) {
+        item.submenu.items.forEach(translateMenuItem);
+      }
     }
   }
 
   try {
     const { Menu } = require('electron');
-    if (Menu && Menu.buildFromTemplate && !Menu.__isTranslated) {
+    if (Menu && !Menu.__isTranslated) {
       const originalBuildFromTemplate = Menu.buildFromTemplate;
       Menu.buildFromTemplate = function(template) {
         if (template && Array.isArray(template)) {
-          template.forEach(translateMenu);
+          template.forEach(translateMenuItem);
         }
         return originalBuildFromTemplate.call(this, template);
       };
+
+      const originalSetApplicationMenu = Menu.setApplicationMenu;
+      Menu.setApplicationMenu = function(menu) {
+        if (menu && menu.items) {
+          menu.items.forEach(translateMenuItem);
+        }
+        return originalSetApplicationMenu.call(this, menu);
+      };
+
       Menu.__isTranslated = true;
     }
   } catch(e) {
@@ -932,16 +1120,18 @@ def replace_in_file(file_path, target, replacement):
 def apply_patch():
     print("==================================================================")
     print("                                                                ")
-    print("              Antigravity v2.21.1 桌面端 一键汉化补丁               ")
+    print("              Antigravity v2.30.0+ 桌面端 一键汉化补丁               ")
     print("Github 开源项目地址：https://github.com/MIMICTE/Antigravity-zh-CN")
     print("                                                                ")
     print("==================================================================")
     print("                                                                ")
-    print("[执行] 正在为您关闭 Antigravity 程序...")
+    print("[执行] 正在为您关闭 Antigravity 程序及后台服务...")
     if sys.platform == "win32":
         os.system("taskkill /F /IM Antigravity.exe >nul 2>&1")
+        os.system("taskkill /F /IM language_server.exe >nul 2>&1")
     elif sys.platform == "darwin":
         os.system("pkill -f Antigravity >/dev/null 2>&1")
+        os.system("pkill -f language_server >/dev/null 2>&1")
 
     # 1. 确保 unpacked app 文件夹存在
     is_fresh_install = os.path.exists(ASAR_PATH) and not os.path.exists(ASAR_PATH + ".disabled")
@@ -962,6 +1152,12 @@ def apply_patch():
         try:
             extract_asar(source_asar, UNPACKED_APP_DIR)
             print("[完成] 文件提取完毕.")
+            # 同步解包资源 (如 chrome-devtools-mcp 等原生外部模块)
+            unpacked_source = os.path.join(RESOURCES_DIR, "app.asar.unpacked")
+            if os.path.exists(unpacked_source):
+                print("[执行] 正在同步 app.asar.unpacked 原生模块资源...")
+                shutil.copytree(unpacked_source, UNPACKED_APP_DIR, dirs_exist_ok=True)
+                print("[完成] 原生模块资源同步完毕.")
         except Exception as e:
             print(f"[错误] 提取 app.asar 失败: {e}")
             return False
@@ -978,8 +1174,36 @@ def apply_patch():
 
     replace_in_file(tray_path, "'Show Antigravity'", "'显示 Antigravity'")
     replace_in_file(tray_path, "'Quit'", "'退出'")
+    replace_in_file(tray_path, "(count > 0 ? `${count}` : 'No') +\n                    ' agent' +\n                    (count === 1 ? '' : 's') +\n                    ' running'", "count > 0 ? `${count} 个智能体正在运行` : '暂无运行中的智能体'")
 
-    # 3. 汉化 loadingOverlay (Splash Screen)
+    # 3. 汉化 main.js (托盘与系统弹窗)
+    main_path = os.path.join(UNPACKED_APP_DIR, "dist", "main.js")
+    if os.path.exists(main_path):
+        replace_in_file(main_path, "'No agents running'", "'暂无运行中的智能体'")
+        replace_in_file(main_path, "`Open ${electron_1.app.getName()}`", "`打开 ${electron_1.app.getName()}`")
+        replace_in_file(main_path, "label: 'Quit'", "label: '退出'")
+        replace_in_file(main_path, "'WSL distro not found'", "'未找到 WSL 分发版'")
+        replace_in_file(main_path, "'Antigravity opened on Windows instead.'", "'Antigravity 已改为在 Windows 上打开。'")
+        replace_in_file(main_path, "'WSL setup failed'", "'WSL 配置失败'")
+        replace_in_file(main_path, "'Startup failed'", "'启动失败'")
+        replace_in_file(main_path, "'Binary not found'", "'未找到核心二进制文件'")
+
+    # 4. 汉化 provisionSplash.js (WSL 配置加载窗)
+    splash_path = os.path.join(UNPACKED_APP_DIR, "dist", "provisionSplash.js")
+    if os.path.exists(splash_path):
+        replace_in_file(splash_path, "Setting up WSL: ", "正在配置 WSL: ")
+
+    # 5. 汉化 ideInstall/wizardHtml.js (IDE 安装向导)
+    wizard_path = os.path.join(UNPACKED_APP_DIR, "dist", "ideInstall", "wizardHtml.js")
+    if os.path.exists(wizard_path):
+        replace_in_file(wizard_path, "<title>Welcome to Antigravity</title>", "<title>欢迎使用 Antigravity</title>")
+        replace_in_file(wizard_path, "Setting up…", "正在设置…")
+        replace_in_file(wizard_path, "Welcome to the new Antigravity!", "欢迎使用全新的 Antigravity！")
+        replace_in_file(wizard_path, "Antigravity has been redesigned to put agents first with new capabilities. If you'd still like a code editor, you can download it as a separate app named <b>Antigravity IDE</b>.", "Antigravity 已全新升级，带来以智能体为核心的全新能力。如果您仍需要代码编辑器，可单独下载名为 <b>Antigravity IDE</b> 的独立应用。")
+        replace_in_file(wizard_path, "Download the Antigravity IDE", "下载 Antigravity IDE")
+        replace_in_file(wizard_path, "Explore the new Antigravity", "探索全新 Antigravity")
+
+    # 6. 汉化 loadingOverlay (Splash Screen)
     loading_path = os.path.join(UNPACKED_APP_DIR, "dist", "loadingOverlay.js")
     if os.path.exists(loading_path):
         with open(loading_path, "r", encoding="utf-8") as f:

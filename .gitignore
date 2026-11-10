@@ -49,3 +49,6 @@ desktop.ini
 *.bak
 *.backup
 *.tmp
+
+.local/
+Python/
