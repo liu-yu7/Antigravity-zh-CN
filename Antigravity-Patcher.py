@@ -6,8 +6,33 @@ import subprocess
 import shutil
 import sys
 
+def get_local_appdata():
+    val = os.environ.get('LOCALAPPDATA')
+    if val and os.path.isdir(val):
+        return val
+    try:
+        import ctypes
+        from ctypes import wintypes
+        buf = ctypes.create_unicode_buffer(wintypes.MAX_PATH)
+        if ctypes.windll.shell32.SHGetFolderPathW(None, 28, None, 0, buf) == 0:
+            if buf.value and os.path.isdir(buf.value):
+                return buf.value
+    except Exception:
+        pass
+    temp = os.environ.get('TEMP') or os.environ.get('TMP')
+    if temp:
+        p = os.path.abspath(temp)
+        while p and os.path.basename(p).lower() != 'local':
+            parent = os.path.dirname(p)
+            if parent == p:
+                break
+            p = parent
+        if os.path.isdir(p):
+            return p
+    return os.path.expanduser(r'~\\AppData\\Local')
+
 if sys.platform == "win32":
-    APP_DIR = os.path.join(os.getenv('LOCALAPPDATA', ''), 'Programs', 'antigravity')
+    APP_DIR = os.path.join(get_local_appdata(), 'Programs', 'antigravity')
     RESOURCES_DIR = os.path.join(APP_DIR, "resources")
 elif sys.platform == "darwin":
     APP_DIR = "/Applications/Antigravity.app"
